@@ -63,15 +63,15 @@ Changed to `random.randint(30, 180)`
 
 <table>
 <tr>
-    <td><img src="./screenshots/Screenshot 2025-05-04 at 16.29.31.png" width="250"/>
+    <td><img src="./screenshots/Screenshot 2025-05-04 at 16.29.31.png" width="350"/>
     <p>Success</p></td>
-    <td><img src="./screenshots/Screenshot 2025-05-04 at 16.29.40.png" width="250"/>
+    <td><img src="./screenshots/Screenshot 2025-05-04 at 16.29.40.png" width="350"/>
     <p>Failure</p></td>
-    <td><img src="./screenshots/Screenshot 2025-05-04 at 16.30.16.png" width="250"/>
+    <td><img src="./screenshots/Screenshot 2025-05-04 at 16.30.16.png" width="350"/>
     <p>Pod Logs</p></td>
 </tr>
 <tr>
-    <td><img src="./screenshots/Screenshot 2025-05-04 at 18.13.07.png" width="250"/>
+    <td><img src="./screenshots/Screenshot 2025-05-04 at 18.13.07.png" width="350"/>
     <p>ArgoCD Dashboard</p></td>
 </tr>
 </table>
