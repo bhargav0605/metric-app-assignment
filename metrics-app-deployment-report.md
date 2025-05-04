@@ -57,7 +57,7 @@ Changed to `random.randint(30, 180)`
 
 | Issue                                  | Root Cause                                  | Fix                                       |
 |----------------------------------------|---------------------------------------------|--------------------------------------------|
-| App crash on `/counter`                | Incorrect `randint` range                   | random.randint(30, 180)                         |
+| Internal server error on `/counter`                | Incorrect `randint` range                   | random.randint(30, 180)                         |
 
 ## 📸 Screenshots / Logs
 
