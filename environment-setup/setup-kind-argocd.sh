@@ -12,6 +12,8 @@ nodes:
   extraPortMappings:
   - containerPort: 30080
     hostPort: 8080
+  - containerPort: 80
+    hostPort: 8081
 EOF
 
 echo "✅ KIND cluster '$CLUSTER_NAME' created."
@@ -61,3 +63,21 @@ spec:
 EOF
 
 echo "✅ Guestbook application deployed via Argo CD!"
+
+
+# Install NGINX Ingress Controller
+echo "🌐 Installing NGINX Ingress Controller..."
+kubectl apply -f https://kind.sigs.k8s.io/examples/ingress/deploy-ingress-nginx.yaml
+
+echo "⏳ Waiting for Ingress Controller pod to appear..."
+until kubectl get pods -n ingress-nginx -l app.kubernetes.io/component=controller | grep -q 'Running'; do
+  sleep 2
+done
+
+echo "⏳ Waiting for Ingress Controller to become ready..."
+kubectl wait --namespace ingress-nginx \
+  --for=condition=Ready pod \
+  -l app.kubernetes.io/component=controller \
+  --timeout=90s
+
+echo "✅ NGINX Ingress Controller is ready."
