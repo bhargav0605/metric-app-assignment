@@ -33,15 +33,6 @@
 |--------------------------------------------------         
 | Flask app raised `ValueError: empty range`       
 
-### Screenshots:
-![Success Response](./screenshots/Screenshot%202025-05-04%20at%2016.29.31.png)
-Success response.
-
-![Internal Server Error](./screenshots/Screenshot%202025-05-04%20at%2016.29.40.png)
-Above screenshot shows the error.
-
-![Logs from the metric-app pod](./screenshots/Screenshot%202025-05-04%20at%2016.30.16.png)
-Metric App error logs.
 
 ## 🔍 Diagnosis & Fixes
 
